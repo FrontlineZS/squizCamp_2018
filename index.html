@@ -11,6 +11,7 @@
   <title>My Small Shipyard</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./form-style.css">
   <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -225,49 +226,76 @@
   </main>
 
   <!-- THE ORDER FORM -->
-  <hr>
   <section>
-    <form id="order-form"
-    name="order-form"
-    action="#"
-    method="post"
-    aria-labelledby="order-form-label">
-      <ul>
-        <li>
-        <h2 id="order-form-label">The Order Form</h2>
-          <span class="required-notification">* Denotes Required Field</span>
-        </li>
-        <li>
-        <label for="name">Name:</label>
-          <input id="name" type="text" name="name" aria-required="true" required />
-        </li>
-        <li>
-        <label for="email">Email:</label>
-          <input id="email" type="email" name="email" aria-required="true" required />
-        </li>
-        <li>
-        <label for="phone">Phone:</label>
-          <input id="phone" type="tel" name="phone" aria-required="true" required />
-        </li>
-        <li>
-        <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment"></textarea>
-        </li>
-        <li>
-          <button type="submit" name="submit">Send The Order</button>
-        </li>
-      </ul>
-      <div id="success">
-        <strong>Success !</strong><span>The order has been sent successfully.</span>
-      </div>
-      <div id="failure">
-        <strong>Failure !</strong><span>Something went wrong, please ensure all fields are filled out.</span>
-      </div>
-    </form>
+    <div class="form-container">
+      <form id="order-form"
+        class="new-order-form"
+        name="order-form"
+        action="#"
+        method="post"
+        onsubmit="return validateForm()"
+        aria-labelledby="order-form-label"
+        novalidate>
+        <ul class="new-order-form__list">
+          <li class="new-order-form__listItem">
+          <h2 class="new-order-form__heading">The Order Form</h2>
+            <span class="required-notification">* Denotes Required Field</span>
+          </li>
+          <li class="new-order-form__listItem">
+            <label class="new-order-form__label"
+                   for="name">Ship Name:</label>
+            <input id="name"
+                   class="new-order-form__input"
+                   type="text"
+                   name="name"
+                   aria-required="true"
+                   required />
+          </li>
+          <li class="new-order-form__listItem">
+            <label class="new-order-form__label"
+                   for="email">Email:</label>
+            <input id="email"
+                   class="new-order-form__input"
+                   type="email"
+                   name="email"
+                   aria-required="true"
+                   required />
+          </li>
+          <li class="new-order-form__listItem">
+            <label class="new-order-form__label"
+                   for="phone">Phone:</label>
+            <input id="phone"
+                   class="new-order-form__input"
+                   type="tel"
+                   name="phone"
+                   aria-required="true"
+                   required
+                   pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3}$"/>
+          </li>
+          <li class="new-order-form__listItem">
+            <label class="new-order-form__label"
+                   for="comment">Comment:</label>
+            <textarea id="comment"
+                      class="new-order-form__textarea"
+                      name="comment"></textarea>
+          </li>
+          <li class="new-order-form__listItem">
+            <button type="submit"
+                    class="new-order-form__button"
+                    name="submit">Send The Order</button>
+          </li>
+        </ul>
+        <!-- <div id="success">
+          <strong>Success !</strong><span>The order has been sent successfully.</span>
+        </div>
+        <div id="failure">
+          <strong>Failure !</strong><span>Something went wrong, please ensure all fields are filled out.</span>
+        </div> -->
+      </form>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <hr>
   <footer>
     <div class="footer-wrap">
       <div class="social-links">

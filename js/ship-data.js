@@ -1,4 +1,4 @@
-var shipData = [
+var shipData = [ 
   {
     id: 1,
     name: 'Agamemnon HMS',
