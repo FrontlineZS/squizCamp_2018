@@ -17,35 +17,26 @@
 <body>
 
   <!-- BANNER SECTION -->
-  <header class="banner">
-    <div class="container row">
-      <div class="col-4">
-        <figure id="logo">
-          <img src="./img/logo.png" alt="website_logo" width="200" height="100">
-        </figure>
+  <header class="header row">
+    <nav class="navbar">
+      <div class="navbar__toggle-menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
-      <div class="col-8">
-        <nav aria-label="My Small Shipyard"
-             class="navbar">
-          <ul role="menubar"
-              aria-label="My Small Shipyard"
-              class="navbar__list">
-            <li class="navbar__list__item">
-              <a class="navbar__list__item__link" href="#" role="menuitem">Home</a>
-            </li>
-            <li class="navbar__list__item">
-              <a class="navbar__list__item__link" href="#" role="menuitem">Model Ship Plans</a>
-            </li>
-            <li class="navbar__list__item">
-              <a class="navbar__list__item__link" href="#" role="menuitem">Model Ship Kits</a>
-            </li>
-            <li class="navbar__list__item">
-              <a class="navbar__list__item__link" href="#" role="menuitem">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+      <ul class="navbar__list">
+        <li class="navbar__listItem">
+          <a class="navbar__link" href="#">Home</a>
+        </li>
+        <li class="navbar__listItem">
+          <a class="navbar__link" href="#">Model Ship Plans</a>
+        </li>
+        <li class="navbar__listItem">
+          <a class="navbar__link" href="#">Model Ship Kits</a>
+        </li>
+        <li class="navbar__listItem">
+          <a class="navbar__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- CAROUSEL SECTION -->
@@ -54,15 +45,15 @@
         <div class="carousel-inner">
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
             <div class="carousel-item">
-                <img src="http://fakeimg.pl/2000x800/916c1f/fff/?text=Carousel1">
+                <img src="./img/carousel1.jpg" alt="first carousel image">
             </div>
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
-                <img src="http://fakeimg.pl/2000x800/916c1f/fff/?text=Carousel2">
+                <img src="./img/carousel2.jpg" alt="second carousel image">
             </div>
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
-                <img src="http://fakeimg.pl/2000x800/916c1f/fff/?text=Carousel3">
+                <img src="./img/carousel3.jpg" alt"thord carousel image">
             </div>
             <label for="carousel-3" class="carousel-control prev control-1">‹</label>
             <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -87,6 +78,7 @@
 
   <!-- MAIN SECTION -->
   <main>
+    <div >
     <section class="section">
       <div class="container container--center flexbox">
         <div class="card-panel col">
@@ -167,10 +159,11 @@
         </header>
       </article>
     </aside>
-
+  </div>
     <!-- SHIP && DIY KITS LISTS -->
-    <section class="section">
+    <!-- <section class="section">
       <div class="container">
+
         <div class="card-details-panel row">
           <div class="col-4">
             <figure>
@@ -196,6 +189,7 @@
             </p>
           </div>
         </div>
+
         <div class="card-details-panel row">
           <div class="col-4">
             <figure>
@@ -222,11 +216,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <!-- THE ORDER FORM -->
-  <section>
+  <!-- <section>
     <div class="form-container">
       <form id="order-form"
         class="new-order-form"
@@ -285,34 +279,42 @@
                     name="submit">Send The Order</button>
           </li>
         </ul>
-        <!-- <div id="success">
+        <div id="success">
           <strong>Success !</strong><span>The order has been sent successfully.</span>
         </div>
         <div id="failure">
           <strong>Failure !</strong><span>Something went wrong, please ensure all fields are filled out.</span>
-        </div> -->
+        </div>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-wrap">
-      <div class="social-links">
-        <ul>
-          <li>fb-link</li>
-          <li>tw-link</li>
-          <li>g+-link</li>
+  <footer class="footer">
+    <div class="container row">
+      <div class="col-6">
+        <ul class="footer__linkList">
+          <li class="footer__listItem">
+            <a class="footer__linkItem" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer__listItem">
+            <a class="footer__linkItem" target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer__listItem">
+            <a class="footer__linkItem" target="_blank" href="https://www.plus.google.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer__listItem">
+            <a class="footer__linkItem" target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          </li>
         </ul>
       </div>
-      <div class="other-contact-links">
-        <h2>Contact Us</h2>
-        <p>Dock of the Bay Studio</p>
+      <div class="col-6">
+        <h2 class="footer__heading">Contact Us</h2>
         <address>
-          <ul>
-            <li>address</li>
-            <li>phone number</li>
-            <li>email</li>
+          <ul class="footer__addressesList">
+            <li>Wojska Polskiego 184c/20, 71-256 Szczecin</li>
+            <li>+48 91 85 222 85</li>
+            <li>squizcamp-2018@gmail.com</li>
           </ul>
         </address>
       </div>
