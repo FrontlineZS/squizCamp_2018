@@ -13,30 +13,97 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./form-style.css">
   <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.hamburgler').click(function(e){
+            e.preventDefault();
+            $(this).toggleClass('no-hamburgler');
+        });
+    });
+  </script> -->
 </head>
 <body>
 
   <!-- BANNER SECTION -->
-  <header class="header row">
-    <nav class="navbar">
-      <div class="navbar__toggle-menu">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+  <header class="banner">
+    <div class="container row">
+      <div class="col-4">
+        <figure class="logo">
+          <img src="./img/logo.png" alt="website_logo" width="auto" height="60">
+        </figure>
       </div>
-      <ul class="navbar__list">
-        <li class="navbar__listItem">
-          <a class="navbar__link" href="#">Home</a>
-        </li>
-        <li class="navbar__listItem">
-          <a class="navbar__link" href="#">Model Ship Plans</a>
-        </li>
-        <li class="navbar__listItem">
-          <a class="navbar__link" href="#">Model Ship Kits</a>
-        </li>
-        <li class="navbar__listItem">
-          <a class="navbar__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="col-8">
+        <nav aria-label="Main navigation"
+             class="navbar">
+          <ul role="menubar"
+              aria-label="Navigation list"
+              class="navbar__list">
+            <li class="navbar__list-item">
+              <a class="navbar__list-item-link"
+                 href="#"
+                 role="menuitem">Home</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-item-link"
+                 href="#"
+                 role="menuitem">Model Ship Plans</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-item-link"
+                 href="#"
+                 role="menuitem">Model Ship Kits</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-item-link"
+                 href="#"
+                 role="menuitem">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="hamburger-container">
+            <a href="#toggle" class="hamburger" id="hamburger">
+              <div class="bun top"></div>
+              <div class="meat"></div>
+              <div class="bun bottom"></div>
+            </a>
+          </div>
+
+          <div id="mySidenav" class="sidenav">
+            <ul class="sidenav_list"
+                aria-label="Navigation list for smaller devices"
+                role="menubar">
+              <li class="sidenav_list-item">
+                <a href="#"
+                   class="sidenav_list-item-link"
+                   role="menuitem">Home</a>
+              </li>
+              <li class="sidenav_list-item">
+                <a href="#"
+                   class="sidenav_list-item-link"
+                   role="menuitem">Model Ship Plans</a>
+              </li>
+              <li class="sidenav_list-item">
+                <a href="#"
+                   class="sidenav_list-item-link"
+                   role="menuitem">Model Ship Kits</a>
+              </li>
+              <li class="sidenav_list-item">
+                <a href="#"
+                   class="sidenav_list-item-link"
+                   role="menuitem">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <!-- CAROUSEL SECTION -->

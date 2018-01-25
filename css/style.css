@@ -1,7 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header, section, footer,
@@ -13,6 +12,7 @@ body {
   font-size: 16px;
   color: #333;
   background: #fff;
+  margin: 0;
 }
 
 h1 {
@@ -104,62 +104,182 @@ h1 {
   flex: 1;
 }
 
-.navbar {
-  width: 100%;
-  background: #EAEAEB;
+.hamburger-container {
+  display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #CEB172;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav--open {
+  width: 250px;
+  background-color: #F1F1F1;
+}
+
+.sidenav_list {
+  padding: 0;
+  font-family: 'Calibri';
+  font-size: 22px;
+  list-style: none;
+}
+
+.sidenav_list-item {
+  display: block;
+}
+
+.sidenav_list-item:hover {
+  background: #9B7625;
+}
+
+.sidenav_list-item:hover .sidenav_list-item-link {
+  color: #FFF;
+}
+
+.sidenav_list-item-link {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav--open {
+    padding-top: 15px;
+    width: 170px;
+  }
+
+  .sidenav_list-item-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .logo {
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__list {
+    opacity: 0;
+    display: none;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .banner {
+    background-color: #CEB172;
+    padding: 0;
+    box-shadow: 0 1px #666;
+  }
+
+  .hamburger-container {
+    display: block;
+    float: right;
+    padding: 35px;
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 20px;
+    display: block;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+
+  .hamburger.no-hamburger {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .bun,
+  .meat {
+    display: block;
+    width: 100%;
+    background: #000;
+    height: 20%;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border-radius: 50px;
+  }
+
+  .no-hamburger .top {
+    height: 38%;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .no-hamburger .bottom {
+    height: 38%;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .meat {
+    margin: 20% 0;
+  }
+  .no-hamburger .meat {
+    margin: 2% 0;
+  }
+
+}
+
+.banner {
+  background-color: #CEB172;
+  box-shadow: 0 1px #666;
 }
 
 .navbar__list {
-  width: 80%;
-  margin: 0 auto;
+  margin-top: 15px;
   padding: 0;
+  font-family: 'Calibri';
+  font-size: 22px;
+  list-style: none;
 }
 
-.navbar__listItem {
-  list-style: none;
+.navbar__list-item {
   display: inline-block;
   padding: 20px;
 }
 
-.navbar__listItem:hover {
-  background: #fff;
+.navbar__list-item:hover {
+  background: #9B7625;
+  border-top-left-radius: 35%;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 35%;
   cursor: pointer;
 }
 
-.navbar__link {
+.navbar__list-item:hover .navbar__list-item-link {
+  color: #FFF;
+}
+
+.navbar__list-item-link {
   text-decoration: none;
   color: #000;
-}
-
-.navbar__toggle-menu {
-  width: 100%;
-  padding: 10px 20px;
-  background: blue;
-  color: white;
-  font-size: 26px;
-  text-align: right;
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar__toggle-menu {
-    display: block;
-  }
-
-  .navbar__list {
-    width: 100%;
-  }
-
-  .navbar__listItem {
-    display: block;
-    text-align: center;
-  }
 }
 
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 125px;
+    margin-top: 35px;
     margin-bottom: 60px;
 }
 
@@ -339,7 +459,8 @@ h1 {
 }
 
 .footer {
-  background-color: #ceb172;
+  background-color: #CEB172;
+  box-shadow: 0 -1px #666;
   margin-top: 80px;
   padding: 30px;
 }
@@ -358,6 +479,10 @@ h1 {
 .footer__linkItem:link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__linkItem:hover {
+  zoom: 140%;
 }
 
 .footer__listItem {
