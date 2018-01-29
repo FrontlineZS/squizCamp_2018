@@ -2,15 +2,48 @@ import ShipsStorage from './ships-storage.js';
 var shipsStorage = new ShipsStorage();
 
 hamburgerManager();
-replaceSiteContent();
 
-function replaceSiteContent() {
+let home = document.querySelector('#home');
+home.addEventListener('click', function() {
+  generateHomeSite();
+});
+
+let modelShipPlans = document.querySelector('#model-ship-plans');
+modelShipPlans.addEventListener('click', function() {
+  replaceSiteContent();
+});
+
+let historicalShipPlans = document.querySelector('#historical-ships');
+historicalShipPlans.addEventListener('click', function() {
+  replaceSiteContent('historical');
+});
+
+let customShipPlans = document.querySelector('#custom-ships');
+customShipPlans.addEventListener('click', function() {
+  replaceSiteContent('custom');
+});
+
+let modernShipPlans = document.querySelector('#modern-ships');
+modernShipPlans.addEventListener('click', function() {
+  replaceSiteContent('modern');
+});
+
+function generateHomeSite() {
+  let currentSectionsWrapper = document.querySelector('#new-sections-wrapper');
+  let homeSectionsWapper = document.querySelector('#home-sections-wrapper');
+
+  currentSectionsWrapper.classList.add('sections-wrapper--hidden');
+
+  homeSectionsWapper.classList.remove('sections-wrapper--hidden');
+  homeSectionsWapper.classList.add('sections-wrapper');
+}
+function replaceSiteContent(filterType) {
   let mainHandler = document.querySelector('#main');
-  let sectionsWrapper = document.querySelector('#sections-wrapper');
+  let sectionsWrapper = document.querySelector('#home-sections-wrapper');
   sectionsWrapper.classList.add('sections-wrapper--hidden');
 
   let newSectionsWrapper = document.createElement('div');
-  newSectionsWrapper.setAttribute('id', 'sections-wrapper');
+  newSectionsWrapper.setAttribute('id', 'new-sections-wrapper');
   newSectionsWrapper.classList.add('sections-wrapper');
 
   let section = document.createElement('section');
@@ -21,13 +54,19 @@ function replaceSiteContent() {
   cardWrapper.classList.add('card-wrapper');
   section.appendChild(cardWrapper);
 
-  shipsStorage.ships.forEach(generateNewShipItem);
+  if (arguments.length === 0) {
+    shipsStorage.ships.forEach(generateNewShipItem);
+  } else {
+    let filteredShips = shipsStorage.ships.filter(ship => ship.type === `${filterType}`);
+    filteredShips.forEach(generateNewShipItem);
+  }
 
   mainHandler.insertAdjacentElement('afterbegin', newSectionsWrapper);
 
   function generateNewShipItem(item) {
     let cardPanel = document.createElement('div');
     cardPanel.classList.add('card-panel');
+    cardPanel.classList.add('card-panel--custom-hover');
 
     let cardPanelFigure = document.createElement('figure');
     cardPanelFigure.classList.add('card-panel__figure');
@@ -66,9 +105,6 @@ function replaceSiteContent() {
     cardWrapper.appendChild(cardPanel);
   }
 }
-
-
-
 function hamburgerManager() {
   let hamburger = document.querySelector('#hamburger');
   let sideNav = document.querySelector('#mySidenav');
