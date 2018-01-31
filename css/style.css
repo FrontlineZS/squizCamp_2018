@@ -140,7 +140,7 @@ nav, article, figure {
 body {
   font-size: 16px;
   color: #333;
-  background: #fff;
+  background: #FFF;
   margin: 0;
 }
 
@@ -201,6 +201,17 @@ h1 {
 
 .col-12 {
   width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 
 .row:after {
@@ -392,7 +403,7 @@ h1 {
 .carousel-control {
   background: rgba(0, 0, 0, 0.28);
   border-radius: 50%;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   display: none;
   font-size: 40px;
@@ -419,7 +430,7 @@ h1 {
 
 .carousel-control:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa;
+  color: #AAA;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -446,14 +457,14 @@ h1 {
 }
 
 .carousel-bullet {
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   display: block;
   font-size: 35px;
 }
 
 .carousel-bullet:hover {
-  color: #aaaaaa;
+  color: #AAA;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
@@ -464,7 +475,7 @@ h1 {
 
 .card-panel {
   font-family: 'Ubuntu', sans-serif;
-  border: 1px solid #ceb172;
+  border: 1px solid #CEB172;
   border-radius: 20px;
   padding: 1em;
   box-sizing: border-box;
@@ -481,12 +492,14 @@ h1 {
 
 .card-panel__figure {
   margin: 0;
+  padding: 5px 10px;
 }
 
 .card-panel__heading {
   font-size: 26px;
   font-weight: normal;
   font-family: 'Ledger', 'serif';
+  margin-top: 10px;
 }
 
 .card-panel__paragraph {
@@ -496,12 +509,13 @@ h1 {
   text-align: center;
   font-family: 'Ledger', 'serif';
   font-size: 15px;
-  color: #afa895;
+  color: #AFA895;
+  letter-spacing: .7px;
 }
 
 .card-panel__link {
   text-decoration: none;
-  color: #ceb172;
+  color: #CEB172;
   font-family: 'Ledger', 'serif';
   font-style: italic;
 }
@@ -511,14 +525,14 @@ h1 {
 }
 
 .card-details-panel {
-  border-bottom: 1px solid #ceb172;
-  border-left: 1px solid #ceb172;
-  border-right: 1px solid #ceb172;
+  border-bottom: 1px solid #CEB172;
+  border-left: 1px solid #CEB172;
+  border-right: 1px solid #CEB172;
   font-family: 'Ubuntu', sans-serif;
 }
 
 .card-details-panel:first-of-type {
-  border-top: 1px solid #ceb172;
+  border-top: 1px solid #CEB172;
 }
 
 .card-details-panel__paragraph {
@@ -529,7 +543,7 @@ h1 {
   text-align: left;
   font-family: 'Ledger', 'serif';
   font-size: 15px;
-  color: #afa895;
+  color: #AFA895;
   padding-right: 15px;
   padding-bottom: 15px;
 }

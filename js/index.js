@@ -3,30 +3,39 @@ var shipsStorage = new ShipsStorage();
 
 hamburgerManager();
 
-let home = document.querySelector('#home');
-home.addEventListener('click', function() {
+let homeNav = document.querySelector('#home-nav');
+let modelShipsNav = document.querySelector('#model-ship-plans-nav');
+let historicalShipsNav = document.querySelector('#historical-ships-nav');
+let customShipsNav = document.querySelector('#custom-ships-nav');
+let modernShipsNav = document.querySelector('#modern-ships-nav');
+let historical = document.querySelector('#historical-ships');
+let custom = document.querySelector('#custom-ships');
+let modern = document.querySelector('#modern-ships');
+
+homeNav.addEventListener('click', function() {
   generateHomeSite();
 });
-
-let modelShipPlans = document.querySelector('#model-ship-plans');
-modelShipPlans.addEventListener('click', function() {
+modelShipsNav.addEventListener('click', function() {
   replaceSiteContent();
 });
-
-let historicalShipPlans = document.querySelector('#historical-ships');
-historicalShipPlans.addEventListener('click', function() {
+historicalShipsNav.addEventListener('click', function() {
   replaceSiteContent('historical');
 });
-
-let customShipPlans = document.querySelector('#custom-ships');
-customShipPlans.addEventListener('click', function() {
+customShipsNav.addEventListener('click', function() {
   replaceSiteContent('custom');
 });
-
-let modernShipPlans = document.querySelector('#modern-ships');
-modernShipPlans.addEventListener('click', function() {
+modernShipsNav.addEventListener('click', function() {
   replaceSiteContent('modern');
 });
+historical.addEventListener('click', function() {
+  replaceSiteContent('historical');
+})
+custom.addEventListener('click', function() {
+  replaceSiteContent('custom');
+})
+modern.addEventListener('click', function() {
+  replaceSiteContent('modern');
+})
 
 function generateHomeSite() {
   let currentSectionsWrapper = document.querySelector('#new-sections-wrapper');
@@ -75,8 +84,8 @@ function replaceSiteContent(filterType) {
     let figureImg = document.createElement('img');
     figureImg.setAttribute('src', `./img/${item.img}`);
     figureImg.setAttribute('alt', `${item.type} ship - ${item.name}`);
-    figureImg.setAttribute('width', '50%');
-    figureImg.setAttribute('height', '50%');
+    figureImg.setAttribute('width', '266');
+    figureImg.setAttribute('height', '200');
     cardPanelFigure.appendChild(figureImg);
 
     let cardPanelHeading = document.createElement('h3');
