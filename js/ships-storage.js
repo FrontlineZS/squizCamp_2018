@@ -11,7 +11,7 @@ export default class ShipsStorage {
           heightOverall: 760,
           price: 10,
           img: 'agamemnon-hms.jpg',
-          description: 'The HMS Agamemnon was a third-rate ship of the line of the Royal Navy with an armament of 64. The Agamemnon was built by Henry Adams in Buckler’s Hard, England and launched in 1781. She had a complement of 520.'
+          description: 'The HMS Agamemnon was a third-rate ship of the line of the Royal Navy with an armament of 64.'
         },
         {
           id: 2,
@@ -22,7 +22,7 @@ export default class ShipsStorage {
           heightOverall: 590,
           price: 10,
           img: 'alabama-css.jpg',
-          description: 'The CSS Alabama was an Auxiliary Bark built in great secrecy in 1862 by John Laird Sons & Company at Birkenhead. Commissioned by agent James D Bulloch on behalf of the Confederate Navy.'
+          description: 'The CSS Alabama was an Auxiliary Bark built in great secrecy in 1862 by John Laird Sons'
         },
         {
           id: 3,
@@ -33,7 +33,7 @@ export default class ShipsStorage {
           heightOverall: 680,
           price: 10,
           img: 'albion-hms.jpg',
-          description: 'The HMS Albion was a Canopus-class pre-dreadnought battleship, commissioned on 25 June 1901 at Chatham Dockyard by Captain W. W. Hewett of the Royal Navy.'
+          description: 'The HMS Albion was a Canopus-class pre-dreadnought battleship'
         },
         {
           id: 4,
@@ -44,7 +44,7 @@ export default class ShipsStorage {
           heightOverall: 740,
           price: 10,
           img: 'amerigo-vespucci.jpg',
-          description: 'The Amerigo Vespucci is a tall ship of the Marina Militare, named after the explorer Amerigo Vespucci. She was built in 1930 at the Royal Naval Shipyard of Castellammare di Stabia (Naples) and was launched in 1931.'
+          description: 'The Amerigo Vespucci is a tall ship of the Marina Militare'
         },
         {
           id: 5,
@@ -55,7 +55,7 @@ export default class ShipsStorage {
           heightOverall: 700,
           price: 10,
           img: 'astrolabe.jpg',
-          description: 'The Astrolabe was built by Toulon Shipyard in France and was launched in 1811. The Astrolabe was a horse barge converted to an exploration ship of the French Navy.  The original name of the Astrolabe was Coquille.'
+          description: 'The Astrolabe was built by Toulon Shipyard in France and was launched in 1811.'
         },
         {
           id: 6,
@@ -66,7 +66,7 @@ export default class ShipsStorage {
           heightOverall: 915,
           price: 10,
           img: 'batavia.jpg',
-          description: 'The Batavia was a three-masted, Dutch East India Ship with a wooden hull and an armament of 28 guns.   She was built by the VOC, in Amsterdam, Netherlands and launched in 1628 with a complement of 341, including passengers.'
+          description: 'The Batavia was a three-masted, Dutch East India Ship with a wooden hull and an armament of 28 guns'
         },
         {
           id: 7,
@@ -77,7 +77,7 @@ export default class ShipsStorage {
           heightOverall: 750,
           price: 10,
           img: 'beagle-hms.jpg',
-          description: 'The HMS Beagle was a Bark of the Royal Navy with an armament of 7. Designed by Sir Henry Peake and built by Woolwich Dockyard, England. She was launched in 1820 with a complement of 75.'
+          description: 'The HMS Beagle was a Bark of the Royal Navy with an armament of 7.'
         },
         {
           id: 8,
@@ -88,7 +88,7 @@ export default class ShipsStorage {
           heightOverall: 959,
           price: 10,
           img: 'bluenose.jpg',
-          description: 'Bluenose was a Canadian schooner from Nova Scotia, a celebrated racing ship (and hard-working fishing vessel) and a symbol of the province. The name “bluenose” originated as a nick-name for Nova Scotians.'
+          description: 'Bluenose was a Canadian schooner from Nova Scotia, a celebrated racing ship.'
         },
         {
           id: 9,
@@ -99,7 +99,7 @@ export default class ShipsStorage {
           heightOverall: 780,
           price: 10,
           img: 'charles-w-morgan.jpg',
-          description: 'Charles W. Morgan was a U.S. whaleship during the 19th and early 20th century. Ships of this type usually harvested the blubber of whales for whale oil, which was commonly used in lamps during the time period. The ship is currently an exhibit at the Mystic Seaport museum.'
+          description: 'Charles W. Morgan was a U.S. whaleship during the 19th and early 20th century.'
         },
         {
           id: 10,
@@ -121,7 +121,7 @@ export default class ShipsStorage {
           heightOverall: 800,
           price: 10,
           img: 'constitution-uss.jpg',
-          description: 'Built in Boston to defend the young American nation, USS CONSTITUTION is nearly as old as the document for which George Washington and Congress named her. Both the document and the ship have proven to be resilient symbols of America’s strength, courage, and liberty.'
+          description: 'Built in Boston to defend the young American nation.'
         },
         {
           id: 12,
@@ -132,7 +132,7 @@ export default class ShipsStorage {
           heightOverall: 780,
           price: 10,
           img: 'cutty-sark.jpg',
-          description: 'The Cutty Sark was one of the last clippers built for the China tea trade by Scott, Linton & Company, Dumbarton, Scotland. She was launched in 1869 with a complement of 28.'
+          description: 'The Cutty Sark was one of the last clippers built for the China tea trade by Scott.'
         },
         {
           id: 13,
@@ -187,7 +187,7 @@ export default class ShipsStorage {
           heightOverall: 300,
           price: 10,
           img: 'fast-crew-supply-vessel.jpg',
-          description: 'These are 1:50 scale Custom Built model ships of Fast Crew   Supply Vessels built for various customers around the World. These ship models were built from the original plans and photographs that was supplied by the customer.'
+          description: 'These are 1:50 scale Custom Built model ships of Fast Crew Supply Vessels built for various customers around the World. These ship models were built from the original plans and photographs that was supplied by the customer.'
         },
         {
           id: 18,
@@ -231,7 +231,7 @@ export default class ShipsStorage {
           heightOverall: 650,
           price: 10,
           img: 'sail-training-vessel.jpg',
-          description: 'This is a 1:100 scale Custom Built Model Ship of a Sail Training Vessel that was built by DAMEN Shipyards for the Sultan of Oman. This model was custom built from the original plans and photographs that has been provided to us by the customer.'
+          description: 'This is a 1:100 scale Custom Built Model Ship of a Sail Training Vessel that was built by DAMEN Shipyards for the Sultan of Oman.'
         },
         {
           id: 22,
@@ -242,7 +242,7 @@ export default class ShipsStorage {
           heightOverall: 500,
           price: 10,
           img: 'super-yacht.jpg',
-          description: 'This is a scale model of a Concept Super Yacht designed by Rainsford Mann Design. The model was built for Project 75.'
+          description: 'This is a scale model of a Concept Super Yacht designed by Rainsford Mann Design.'
         },
         {
           id: 23,
