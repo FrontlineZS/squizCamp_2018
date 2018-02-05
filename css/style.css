@@ -233,6 +233,10 @@ h1 {
   margin-top: 100px;
 }
 
+.home-sections-wrapper--hidden {
+  display: none;
+}
+
 .flexbox {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -471,7 +475,7 @@ h1 {
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-  color: #428bca;
+  color: #9B7625;
 }
 
 .card-panel {
@@ -512,6 +516,11 @@ h1 {
   font-size: 15px;
   color: #AFA895;
   letter-spacing: .7px;
+  height: 100px;
+}
+
+.card-panel__paragraph--auto-height {
+  height: auto;
 }
 
 .card-panel__link {
@@ -519,10 +528,32 @@ h1 {
   color: #CEB172;
   font-family: 'Ledger', 'serif';
   font-style: italic;
+  cursor: pointer;
+}
+
+.card-panel__button {
+  background-color: #FFF;
+  border: 1px solid #CEB172;
+  border-radius: 10px;
+  padding: 1em;
+  font-family: 'Ledger', 'serif';
+}
+
+.card-panel__span {
+  color: #AFA895;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-panel__button:hover {
+  border: 1px solid #9B7625;
+  cursor: pointer;
 }
 
 .card-panel-link__icon {
   margin-left: 10px;
+  color: #9B7625;
+  font-size: 15px;
 }
 
 .card-details-panel {
@@ -585,6 +616,49 @@ h1 {
   margin-bottom: 20px;
 }
 
-.home-sections-wrapper--hidden {
+.modal {
   display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: RGBA(0, 0, 0, 0.7);
+}
+
+.modal__btn--to-open {
+  background: coral;
+  padding: 1em 2em;
+  color: #FFF;
+  border: 0;
+}
+
+.modal__btn--to-open:hover {
+  background: #333;
+}
+
+.modal__btn--to-close {
+  color: #CCC;
+  float: right;
+  font-size: 30px;
+}
+
+.modal__btn--to-close:hover,
+.modal__btn--to-close:focus {
+  color: #9B7625;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal__content {
+  background-color: #F4F4F4;
+  border: 3px solid #CEB172;
+  border-radius: 20px;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 RGBA(0, 0, 0, 0.2), 0 7px 20px 0 RGBA(0, 0, 0, 0.17)
 }

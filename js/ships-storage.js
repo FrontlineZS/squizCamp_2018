@@ -187,7 +187,7 @@ export default class ShipsStorage {
           heightOverall: 300,
           price: 10,
           img: 'fast-crew-supply-vessel.jpg',
-          description: 'These are 1:50 scale Custom Built model ships of Fast Crew Supply Vessels built for various customers around the World. These ship models were built from the original plans and photographs that was supplied by the customer.'
+          description: 'These are 1:50 scale Custom Built model ships of Fast Crew Supply Vessels built for various customers around the World.'
         },
         {
           id: 18,

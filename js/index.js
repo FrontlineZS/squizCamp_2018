@@ -43,6 +43,11 @@ modern.addEventListener('click', function() {
   replaceSiteContent('modern');
 });
 
+const modalButtonToClose = document.querySelector('#modal-btn-to-close');
+modalButtonToClose.addEventListener('click', function closeModal() {
+  modal.style.display = 'none';
+});
+
 function generateHomeSite() {
   if (document.querySelector('#new-sections-wrapper')) {
     const mainHandler = document.querySelector('#main');
@@ -109,18 +114,26 @@ function replaceSiteContent(filterType) {
     cardPanelParagraph.textContent = `${item.description}`;
     cardPanel.appendChild(cardPanelParagraph);
 
-    const cardPanelLink = document.createElement('a');
-    cardPanelLink.classList.add('card-panel__link');
-    cardPanelLink.setAttribute('href', '#');
-    cardPanelLink.setAttribute('title', `buy ship called ${item.name}`);
-    cardPanelLink.textContent = 'BUY NOW';
-    cardPanel.appendChild(cardPanelLink);
+    const cardPanelButton = document.createElement('button');
+    cardPanelButton.classList.add('card-panel__button');
+    cardPanelButton.addEventListener('click', function openModal() {
+      const modal = document.querySelector('#modal');
+      const name = document.querySelector('#name');
+      name.value = `${item.name}`;
+      modal.style.display = 'block';
+    });
+    cardPanel.appendChild(cardPanelButton);
+
+    const cardPanelSpan = document.createElement('span');
+    cardPanelSpan.classList.add('card-panel__span');
+    cardPanelSpan.textContent = 'BUY NOW';
+    cardPanelButton.appendChild(cardPanelSpan);
 
     const linkIcon = document.createElement('i');
     const linkIconClasses = ['fa', 'fa-shopping-cart', 'card-panel-link__icon'];
     linkIcon.classList.add(...linkIconClasses);
     linkIcon.setAttribute('aria-hidden', 'true');
-    cardPanelLink.appendChild(linkIcon);
+    cardPanelButton.appendChild(linkIcon);
 
     cardWrapper.appendChild(cardPanel);
   }
