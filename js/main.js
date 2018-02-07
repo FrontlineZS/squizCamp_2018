@@ -86,12 +86,12 @@ function replaceSiteContent(filterType) {
   }
 
   mainHandler.insertAdjacentElement('afterbegin', newSectionsWrapper);
-  mainHandler.scrollIntoView();
+  mainHandler.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 
   function generateNewShipItem(item) {
     const cardPanel = document.createElement('div');
-    cardPanel.classList.add('card-panel');
-    cardPanel.classList.add('card-panel--custom-hover');
+    const cardPanelClasses = ['card-panel', 'card-panel--custom-hover', 'card-panel--bottom-margin'];
+    cardPanel.classList.add(...cardPanelClasses);
 
     const cardPanelFigure = document.createElement('figure');
     cardPanelFigure.classList.add('card-panel__figure');

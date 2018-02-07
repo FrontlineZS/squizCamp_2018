@@ -16,7 +16,8 @@
 </head>
 <body>
   <!-- BANNER AND NAVIGATION SECTION -->
-  <header class="banner">
+  <header id="banner"
+          class="banner">
     <div class="container row">
       <div class="col-4">
         <figure class="logo">
@@ -152,14 +153,14 @@
 
    <!-- MAIN SECTIONS -->
   <main id="main"
-     class="main container container--center">
+        class="main container container--center">
     <div id="home-sections-wrapper">
       <section class="section">
         <div class="card-wrapper">
 
           <div class="card-panel card-panel--custom-hover">
             <figure class="card-panel__figure">
-              <img src="./img/historical-ships.jpg" alt="Historical Ships" width="200" height="200">
+              <img src="./img/historical-ships.jpg" alt="Historical Ships" width="266" height="200">
             </figure>
             <h3 class="card-panel__heading">Historical Ships</h3>
             <p class="card-panel__paragraph">WE HAVE THE RESEARCH, DESIGN AND ARTISTIC CAPABILITY TO BUILD ANY MODEL SHIP OF YOUR CHOICE.</p>
@@ -171,7 +172,7 @@
 
           <div class="card-panel card-panel--custom-hover">
             <figure class="card-panel__figure">
-              <img src="./img/custom-projects.jpg" alt="Custom Projects" width="200" height="200">
+              <img src="./img/custom-projects.jpg" alt="Custom Projects" width="266" height="200">
             </figure>
             <h3 class="card-panel__heading">Custom Projects</h3>
             <p class="card-panel__paragraph">WE CAN CUSTOM-BUILD ANY MODEL SHIP, ANY SIZE, ANYWHERE IN THE WORLD.</p>
@@ -183,7 +184,7 @@
 
           <div class="card-panel card-panel--custom-hover">
             <figure class="card-panel__figure">
-              <img src="./img/modern-ships.jpg" alt="Modern Ships" width="200" height="200">
+              <img src="./img/modern-ships.jpg" alt="Modern Ships" width="266" height="200">
             </figure>
             <h3 class="card-panel__heading">Modern Ships</h3>
             <p class="card-panel__paragraph">WE CAN BUILD A MODEL SHIP OF ANY MODERN SHIP TO ANY SCALE OF YOUR CHOICE.</p>
@@ -300,6 +301,12 @@
      </div>
    </div>
 
+   <button id="scroll-top-btn"
+           class="scroll-top-btn"
+           aria-label="Scroll to the top of page">
+             <i class="fa fa-arrow-up"></i>
+           </button>
+
    <!-- FOOTER -->
    <footer class="footer">
      <div class="container row">
@@ -355,6 +362,7 @@
      </div>
    </footer>
 
-   <script type="module" src="./js/index.js"></script>
+   <script type="module" src="./js/main.js"></script>
+   <script src="./js/scroll-top.js"></script>
  </body>
  </html>
