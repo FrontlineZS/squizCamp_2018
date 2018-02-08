@@ -1,7 +1,7 @@
 import ShipsStorage from './ships-storage.js';
-var shipsStorage = new ShipsStorage();
 
-hamburgerManager();
+
+var shipsStorage = new ShipsStorage();
 
 const homeNav = document.querySelector('#home-nav');
 homeNav.addEventListener('click', function() {
@@ -137,14 +137,4 @@ function replaceSiteContent(filterType) {
 
     cardWrapper.appendChild(cardPanel);
   }
-}
-function hamburgerManager() {
-  const hamburger = document.querySelector('#hamburger');
-  const sideNav = document.querySelector('#mySidenav');
-
-  hamburger.addEventListener('click', function(event) {
-    event.preventDefault();
-    hamburger.classList.toggle('no-hamburger');
-    sideNav.classList.toggle('sidenav--open');
-  });
 }
