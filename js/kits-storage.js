@@ -1,0 +1,222 @@
+var kitsData = [
+  {
+    id: 1,
+    name: 'Ben Retour',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 2,
+    name: 'Bounty Jolly Boat',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 3,
+    name: 'Bremen Krabben Kutter',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 4,
+    name: 'Carabella Santa Maria 1492',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 5,
+    name: 'Cutty Sark Tea Clipper',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 6,
+    name: 'Endeavour Longboat',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 7,
+    name: 'HMS Bounty 1783',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 8,
+    name: 'HMS Endeavour',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 9,
+    name: 'Independence 1775',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 10,
+    name: 'JS Elcano',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 11,
+    name: 'Iload Palma Nova',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 12,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 13,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 14,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 15,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 16,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 17,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 18,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 19,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  },
+  {
+    id: 20,
+    name: '',
+    type: '',
+    scale: '',
+    lengthOverall: ,
+    heightOverall: ,
+    price: ,
+    img: '',
+    description: ''
+  }
+];
