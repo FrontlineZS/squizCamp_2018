@@ -98,7 +98,7 @@ function replaceSiteContent(filterType) {
     cardPanel.appendChild(cardPanelFigure);
 
     const figureImg = document.createElement('img');
-    figureImg.setAttribute('src', `./img/${item.img}`);
+    figureImg.setAttribute('src', `./img/ships/${item.img}`);
     figureImg.setAttribute('alt', `${item.type} ship - ${item.name}`);
     figureImg.setAttribute('width', '266');
     figureImg.setAttribute('height', '200');
