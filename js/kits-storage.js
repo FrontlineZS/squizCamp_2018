@@ -83,13 +83,13 @@ export default class KitsStorage {
         {
           id: 8,
           name: 'HMS Endeavour',
-          type: '',
-          scale: '',
-          lengthOverall: ,
-          heightOverall: ,
+          type: 'advanced',
+          scale: '1:60',
+          lengthOverall: 800,
+          heightOverall: 690,
           price: ,
-          img: '',
-          description: ''
+          img: 'hms-endeavour.jpg',
+          description: 'The H.M.S Endeavour was launched in 1765. She was prepared thee years for a voyage under the command of Captain James Cook.'
         },
         {
           id: 9,
